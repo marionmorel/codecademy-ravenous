@@ -1,20 +1,7 @@
 import React from 'react';
 import './Business.css';
 
-const business = {
-    imageSrc:
-      "https://placehold.co/750x1000",
-    name: "Restaurant Name",
-    address: "Number | Street",
-    city: "City",
-    state: "STATE",
-    zipCode: "Postcode",
-    category: "Category",
-    rating: 0.0,
-    reviewCount: 0,
-  };
-
-export const Business = () => {
+export const Business = ({ business }) => {
     return (
         <div className="business">
             <div className="image-container">
