@@ -33,6 +33,12 @@
     justify-content: space-between;
 }
 
+.businessInfos a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
 .businessInfos p {
     font-size: .88rem;
     font-weight: 300;

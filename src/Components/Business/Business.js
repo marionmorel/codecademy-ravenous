@@ -2,18 +2,21 @@ import React from "react";
 import styles from "./Business.module.css";
 
 const Business = ({ business }) => {
+
+  let maps = `http://maps.google.com/?q=${business.name},${business.address},${business.city},${business.state},${business.zipCode}`;
+
   return (
     <div className={styles.business}>
       <div className={styles.imageContainer}>
-        <img src={business.imageSrc} alt="" />
+        <a href={business.url} target="_blank"><img src={business.imageSrc} alt="" /></a>
       </div>
       <h2>{business.name}</h2>
       <div className={styles.businessInfos}>
-        <div className={styles.businessAddress}>
+        <a href={maps} target="_blank"><div className={styles.businessAddress}>
           <p>{business.address}</p>
           <p>{business.city}</p>
           <p>{`${business.state} ${business.zipCode}`}</p>
-        </div>
+        </div></a>
         <div className={styles.businessReviews}>
           <h3>{business.category.toUpperCase()}</h3>
           <h3 className={styles.businessRating}>{`${business.rating} stars`}</h3>
