@@ -1,33 +1,25 @@
-import React from 'react';
-import { BusinessList } from '../Components/BusinessList/BusinessList';
-import SearchBar from '../Components/SearchBar/SearchBar';
-import './App.css';
+import React, { useState } from "react";
+import styles from "./App.module.css";
 
-const business = {
-  imageSrc:
-    "https://placehold.co/750x1000",
-  name: "Restaurant Name",
-  address: "Number Street Name",
-  city: "City",
-  state: "State",
-  zipCode: "Zip Code",
-  category: "Category",
-  rating: "rating",
-  reviewCount: "review count",
-};
+import BusinessList from "../Components/BusinessList/BusinessList";
+import SearchBar from "../Components/SearchBar/SearchBar";
+import Yelp from "../utils/Yelp";
 
-const businesses = [business, business, business, business, business, business];
+const App = () => {
+  const [businesses, setBusinesses] = useState([]);
 
-function App() {
+  const searchYelp = async (term, location, sortBy) => {
+    const businesses = await Yelp.search(term, location, sortBy);
+    setBusinesses(businesses);
+  };
+
   return (
-    <div className="app">
-      <div className="header">
-        <h1>ravenous</h1>
-      </div>
-      <SearchBar />
-      <BusinessList businesses={businesses}/>
+    <div className={styles.app}>
+      <h1>ravenous</h1>
+      <SearchBar searchYelp={searchYelp} />
+      <BusinessList businesses={businesses} />
     </div>
   );
-}
+};
 
 export default App;
