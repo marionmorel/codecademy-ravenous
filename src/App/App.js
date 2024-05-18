@@ -1,6 +1,6 @@
 import React from 'react';
 import { BusinessList } from '../Components/BusinessList/BusinessList';
-import { SearchBar } from '../Components/SearchBar/SearchBar';
+import SearchBar from '../Components/SearchBar/SearchBar';
 import './App.css';
 
 const business = {
