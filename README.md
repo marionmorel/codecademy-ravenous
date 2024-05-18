@@ -40,6 +40,6 @@ Create an application that replicates the core functionnement of Yelp.
 - ~~Make addresses clickable and have them open the address in Google Maps in a new tab.~~
 - ~~Make images clickable and have them open the business’ website in a new tab.~~
 - Clicking on a different sorting option automatically re-queries the Yelp API, rather than having to manually click “Let’s Go” again.
-- Implement your own type of sort.
-- Allow to search by pressing “Enter” (or “Return”) on a keyboard, as opposed to manually clicking.
+- ~~Implement your own type of sort.~~
+- ~~Allow to search by pressing “Enter” (or “Return”) on a keyboard, as opposed to manually clicking.~~
 - Add autocompletion of addresses to the “Location” input.
