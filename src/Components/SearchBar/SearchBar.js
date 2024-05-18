@@ -6,7 +6,7 @@ const sortByOptions = {
   "Best Match": "best_match",
   "Highest Rated": "rating",
   "Most Reviewed": "review_count",
-  "Shortest Distance" : "shortest_distance",
+  "Shortest Distance" : "distance",
 };
 
 const SearchBar = ({ searchYelp }) => {
