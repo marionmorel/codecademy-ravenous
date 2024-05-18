@@ -8,11 +8,11 @@ const Business = ({ business }) => {
   return (
     <div className={styles.business}>
       <div className={styles.imageContainer}>
-        <a href={business.url} target="_blank"><img src={business.imageSrc} alt="" /></a>
+        <a href={business.url} target="_blank" rel="noreferrer"><img src={business.imageSrc} alt="" /></a>
       </div>
       <h2>{business.name}</h2>
       <div className={styles.businessInfos}>
-        <a href={maps} target="_blank"><div className={styles.businessAddress}>
+        <a href={maps} target="_blank" rel="noreferrer"><div className={styles.businessAddress}>
           <p>{business.address}</p>
           <p>{business.city}</p>
           <p>{`${business.state} ${business.zipCode}`}</p>
