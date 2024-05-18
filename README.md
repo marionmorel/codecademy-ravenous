@@ -14,12 +14,16 @@ Welcome to the Ravenous project, where you’ll be building a restaurant recomme
     - Technologies used
     - Features
     - Future work
+ 
+#### Project Purpose
+
+Create an application that replicates the core functionnement of Yelp.
     
 #### Features
 
 - The website allows users to scroll up and down to navigate through its content.
-- Users can simulate a search by typing in the search bar
-- A list of mock restaurant data is presented to the user.
+- Users can search by typing in the search bar
+- A list of restaurant data is presented to the user.
 
 #### Prerequisites
 
@@ -30,3 +34,12 @@ Welcome to the Ravenous project, where you’ll be building a restaurant recomme
 - Git and GitHub
 - HTTP Requests and Responses
 - Authentication
+
+#### Future Work
+
+- Make addresses clickable and have them open the address in Google Maps in a new tab.
+- Make images clickable and have them open the business’ website in a new tab.
+- Clicking on a different sorting option automatically re-queries the Yelp API, rather than having to manually click “Let’s Go” again.
+- Implement your own type of sort.
+- Allow to search by pressing “Enter” (or “Return”) on a keyboard, as opposed to manually clicking.
+- Add autocompletion of addresses to the “Location” input.
